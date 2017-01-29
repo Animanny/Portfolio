@@ -1,31 +1,60 @@
-var current = 'home'
+var current = 'home';
 
 function toPhoto() {
-	document.getElementById(current).style.opacity = '0';
+    document.getElementById('page').innerHTML = 'photos';
+	document.getElementById('home').style.opacity = '0';
 	setTimeout(function () {
-		document.getElementById(current).style.display = 'none';
+		document.getElementById('home').style.display = 'none';
         document.getElementById('caterphoto').style.display = 'block'; //or relative works too
 		setTimeout(function () {
 			document.getElementById('caterphoto').style.opacity = '1';
 		}, 5);
 	}, 2000);
+    current = 'caterphoto';
 }
 
 function toVid(){
-    document.getElementById(current).style.opacity = '0';
+    document.getElementById('home').style.opacity = '0';
 	setTimeout(function () {
-		document.getElementById(current).style.display = 'none';
+		document.getElementById('home').style.display = 'none';
         document.getElementById('catervid').style.display = 'block'; //or relative works too
 		setTimeout(function () {
 			document.getElementById('catervid').style.opacity = '1';
 		}, 5);
 	}, 2000);
+    current = 'catervid';
+}
+
+function toGraphic(){
+    document.getElementById('home').style.opacity = '0';
+	setTimeout(function () {
+		document.getElementById('home').style.display = 'none';
+        document.getElementById('catervid').style.display = 'block'; //or relative works too
+		setTimeout(function () {
+			document.getElementById('catervid').style.opacity = '1';
+		}, 5);
+	}, 2000);
+    current = 'catervid';
+}
+
+function toCode(){
+    document.getElementById('home').style.opacity = '0';
+	setTimeout(function () {
+		document.getElementById('home').style.display = 'none';
+        document.getElementById('catervid').style.display = 'block'; //or relative works too
+		setTimeout(function () {
+			document.getElementById('catervid').style.opacity = '1';
+		}, 5);
+	}, 2000);
+    current = 'catervid';
 }
 
 function transitionBack() {
-    document.getElementById('caterphoto').style.opacity = '0';
+    document.getElementById('page').innerHTML = 'home';
+    document.getElementById(current).style.opacity = '0';
 	setTimeout(function () {
-		document.getElementById('caterphoto').style.display = 'none';
+        document.getElementById('page').innerHTML = 'home';
+		document.getElementById(current).style.display = 'none';
         document.getElementById('home').style.display = 'block'; //or relative works too
 		setTimeout(function () {
 			document.getElementById('home').style.opacity = '1';

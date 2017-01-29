@@ -18,10 +18,6 @@
     </div>
     <hr>
         
-        
-        
-        
-        
     <div id="home">
         <div class="row" id="catergories">
             <div class="col-md-6">
@@ -38,12 +34,12 @@
         <div class="row" id="catergories">
             <div class="col-md-6">
                 <center>
-                    <a href="#"><p>GRAPHIC DESIGN</p></a>
+                    <a onclick="toGraphic()" href="#"><p>GRAPHIC DESIGN</p></a>
                 </center>
             </div>
             <div class="col-md-6">
                 <center>
-                    <a fref="#"><p>CODE</p></a>
+                    <a onclick="toCode()" href="#"><p>CODE</p></a>
                 </center>
             </div>
         </div>
@@ -56,15 +52,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <a href="http://instagram.com/animanny"><p style="font-family: 'Quicksand', sans-serif;">Instagram</p></a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <a href="http://vsco.co/animanny"><p style="font-family: 'Quicksand', sans-serif;">VSCO</p></a>
             </div>
         </div>
+        <hr>
         <center>
-            <img src="images/pic1.jpg">
             <img src="images/pic2.jpg">
             <img src="images/pic3.jpg">
             <img src="images/pic4.jpg">
@@ -73,6 +69,7 @@
             <img src="images/pic7.jpg">
             <img src="images/pic8.jpg">
             <img src="images/pic9.jpg">
+            <img src="images/pic1.jpg">
             <img src="images/pic10.jpg">
             <img src="images/pic11.jpg">
             <img src="images/pic12.jpg">
@@ -82,9 +79,40 @@
    </div>
         
     <div id="catervid">
-        <img src="favicon.jpg">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-11">
+                <a onclick="transitionBack()" href="#"><p style="font-family: 'Quicksand', sans-serif;" id="exit">x</p></a>
+            </div>
+        </div>
+        <div class="row" style="position: relative; top: 50%; transform: translateY(-50%);">
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AelpCzdSlcY" frameborder="0" allowfullscreen></iframe>
+            
+        </center>
+        </div>
     </div>
         
+    <div id="catergraphic">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-11">
+                <a onclick="transitionBack()" href="#"><p style="font-family: 'Quicksand', sans-serif;" id="exit">x</p></a>
+            </div>
+        </div>
+        <center>
+            <h1>in the works</h1>
+        </center>
+    </div>
+        
+    <div id="catercode">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-11">
+                <a onclick="transitionBack()" href="#"><p style="font-family: 'Quicksand', sans-serif;" id="exit">x</p></a>
+            </div>
+        </div>
+        <center>
+            <h1>in the works</h1>
+        </center>
+    </div>
     
  </div>
 </body>

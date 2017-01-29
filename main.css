@@ -65,19 +65,28 @@ a:active {
 #catervid{
     opacity: 0;
     display: none;
-    animation: opacity 2s;
+    transition: opacity 2s;
 }
 
-h3 {
-  display: inline-block;
-  padding: 10px;
-  background: #B9121B;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+#catergraphic{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
 }
 
-.full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#catercode{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#page{
+    transition: 2s;
+}
+
+.bottom-column
+{
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
 }

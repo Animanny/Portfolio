@@ -1,0 +1,83 @@
+h1{
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+    transition: opacity 2s;
+}
+
+
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    display: inline;
+    text-align: center;
+}
+
+#about{
+    font-family: 'Quicksand', sans-serif;
+    text-align: right;
+}
+
+#titlerow{
+    margin-top: 1em;
+}
+
+
+#catergories{
+    margin-top:15em;
+}
+
+a{
+    color:#373D3F;
+    text-decoration: none;
+}
+
+a:link {
+    color:#373D3F;
+    text-decoration: none
+}
+
+a:visited {
+    color:#373D3F;
+    text-decoration: none
+}
+
+a:hover {
+    color:#373D3F;
+    text-decoration: none
+}
+
+a:active {
+    color:#373D3F;
+    text-decoration: none
+}
+
+#home{
+    transition: opacity 2s;
+}
+
+#caterphoto{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#catervid{
+    opacity: 0;
+    display: none;
+    animation: opacity 2s;
+}
+
+h3 {
+  display: inline-block;
+  padding: 10px;
+  background: #B9121B;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

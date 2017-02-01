@@ -29,31 +29,30 @@ function toGraphic(){
     document.getElementById('home').style.opacity = '0';
 	setTimeout(function () {
 		document.getElementById('home').style.display = 'none';
-        document.getElementById('catervid').style.display = 'block'; //or relative works too
+        document.getElementById('catergraphic').style.display = 'block'; //or relative works too
 		setTimeout(function () {
-			document.getElementById('catervid').style.opacity = '1';
+			document.getElementById('catergraphic').style.opacity = '1';
 		}, 5);
 	}, 2000);
-    current = 'catervid';
+    current = 'catergraphic';
 }
 
 function toCode(){
     document.getElementById('home').style.opacity = '0';
 	setTimeout(function () {
 		document.getElementById('home').style.display = 'none';
-        document.getElementById('catervid').style.display = 'block'; //or relative works too
+        document.getElementById('catercode').style.display = 'block'; //or relative works too
 		setTimeout(function () {
-			document.getElementById('catervid').style.opacity = '1';
+			document.getElementById('catercode').style.opacity = '1';
 		}, 5);
 	}, 2000);
-    current = 'catervid';
+    current = 'catercode';
 }
 
 function transitionBack() {
     document.getElementById('page').innerHTML = 'home';
     document.getElementById(current).style.opacity = '0';
 	setTimeout(function () {
-        document.getElementById('page').innerHTML = 'home';
 		document.getElementById(current).style.display = 'none';
         document.getElementById('home').style.display = 'block'; //or relative works too
 		setTimeout(function () {
